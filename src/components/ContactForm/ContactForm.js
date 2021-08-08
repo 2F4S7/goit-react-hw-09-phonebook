@@ -42,10 +42,6 @@ const ContactForm = () => {
     [dispatch, contacts, name, number],
   );
 
-  resetForm = () => {
-    this.setState({ name: '', number: '' });
-  };
-
   const resetForm = () => {
     setName('');
     setNumber('');
@@ -62,7 +58,6 @@ const ContactForm = () => {
         value={name}
         onChange={handleChange}
         margin="dense"
-        required
       />
       <TextField
         label="Number"
@@ -75,7 +70,6 @@ const ContactForm = () => {
         margin="dense"
         placeholder="38-0XX-XXX-XX-XX"
         pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-        required
       />
       <Button
         variant="contained"
