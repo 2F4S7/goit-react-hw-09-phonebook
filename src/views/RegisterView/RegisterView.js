@@ -54,11 +54,12 @@ class RegisterView extends Component {
             fullWidth
           />
           <TextField
+            id="field1"
             label="Password"
             variant="outlined"
-            type="password"
             name="password"
             value={password}
+            autoComplete="new-password"
             onChange={this.handleChange}
             margin="dense"
             color="secondary"
