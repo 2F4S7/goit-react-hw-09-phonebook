@@ -1,0 +1,52 @@
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 450px;
+  padding: 5px 10px;
+  border: 1px solid #afb3b4;
+  border-radius: 5px;
+}
+.item:hover {
+  border: 2px solid black;
+  background-color: rgb(247, 247, 247);
+}
+
+.item:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.name {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.name:hover {
+  cursor: pointer;
+  color: red;
+  border-radius: 5px;
+}
+
+.number {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.number:hover {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.iconbtn {
+  display: block;
+}
